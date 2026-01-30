@@ -8,7 +8,8 @@
 
     >
 
-<!-- TODO :- Add All required views -->
+    <!-- TODO :- Add All required views -->
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
@@ -20,5 +21,124 @@
         android:textColor="@color/white"
         />
 
+    <ImageView
+        android:id="@+id/tshirt"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/tshirt" />
 
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/heart"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instore"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="In Store"
+        android:layout_below="@id/tshirt"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="17.5$"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/tshirt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="color: Black"
+        android:textSize="16dp"
+        android:layout_below="@id/instore"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/black"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/third"
+        android:layout_below="@id/black"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/type"
+            android:text="Item: Black T-shirt"
+            android:layout_margin="16dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:text="Quantity: 1"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: 17/5$"
+            android:layout_below="@id/type"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="14sp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/quantity"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/minus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/minus"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/add"
+                />
+        </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>
